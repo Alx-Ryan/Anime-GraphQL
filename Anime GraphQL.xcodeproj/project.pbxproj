@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8697FE2C93C0B0006A9680 /* AniListAPIForTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 3D8697FD2C93C0B0006A9680 /* AniListAPIForTesting */; };
+		3D8698012C93C130006A9680 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8698002C93C130006A9680 /* Network.swift */; };
+		3D8698032C93C1B8006A9680 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8698022C93C1B8006A9680 /* ViewModel.swift */; };
 		3DBC839A2C93A6F600B49440 /* Anime_GraphQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC83992C93A6F600B49440 /* Anime_GraphQLApp.swift */; };
 		3DBC839C2C93A6F600B49440 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC839B2C93A6F600B49440 /* ContentView.swift */; };
 		3DBC839E2C93A6F800B49440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC839D2C93A6F800B49440 /* Assets.xcassets */; };
 		3DBC83A12C93A6F800B49440 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC83A02C93A6F800B49440 /* Preview Assets.xcassets */; };
+		3DBC83AD2C93A73B00B49440 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBC83AC2C93A73B00B49440 /* Apollo */; };
+		3DBC83B12C93A73B00B49440 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBC83B02C93A73B00B49440 /* ApolloAPI */; };
+		3DBC83B32C93A73B00B49440 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBC83B22C93A73B00B49440 /* ApolloSQLite */; };
+		3DBC83B52C93A73B00B49440 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBC83B42C93A73B00B49440 /* ApolloTestSupport */; };
+		3DBC83B72C93A73B00B49440 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBC83B62C93A73B00B49440 /* ApolloWebSocket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D8698002C93C130006A9680 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3D8698022C93C1B8006A9680 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3DBC83962C93A6F600B49440 /* Anime GraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anime GraphQL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBC83992C93A6F600B49440 /* Anime_GraphQLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime_GraphQLApp.swift; sourceTree = "<group>"; };
 		3DBC839B2C93A6F600B49440 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,22 +31,50 @@
 		3DBC83A02C93A6F800B49440 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D8697F12C93B515006A9680 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Queries.graphql,
+			);
+			target = 3DBC83952C93A6F600B49440 /* Anime GraphQL */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3D8697EE2C93B268006A9680 /* graphql */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3D8697F12C93B515006A9680 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = graphql; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		3DBC83932C93A6F600B49440 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBC83B12C93A73B00B49440 /* ApolloAPI in Frameworks */,
+				3D8697FE2C93C0B0006A9680 /* AniListAPIForTesting in Frameworks */,
+				3DBC83B72C93A73B00B49440 /* ApolloWebSocket in Frameworks */,
+				3DBC83B52C93A73B00B49440 /* ApolloTestSupport in Frameworks */,
+				3DBC83B32C93A73B00B49440 /* ApolloSQLite in Frameworks */,
+				3DBC83AD2C93A73B00B49440 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D8697FF2C93C0D8006A9680 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3DBC838D2C93A6F600B49440 = {
 			isa = PBXGroup;
 			children = (
 				3DBC83982C93A6F600B49440 /* Anime GraphQL */,
 				3DBC83972C93A6F600B49440 /* Products */,
+				3D8697FF2C93C0D8006A9680 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +89,11 @@
 		3DBC83982C93A6F600B49440 /* Anime GraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				3D8697EE2C93B268006A9680 /* graphql */,
 				3DBC83992C93A6F600B49440 /* Anime_GraphQLApp.swift */,
 				3DBC839B2C93A6F600B49440 /* ContentView.swift */,
+				3D8698002C93C130006A9680 /* Network.swift */,
+				3D8698022C93C1B8006A9680 /* ViewModel.swift */,
 				3DBC839D2C93A6F800B49440 /* Assets.xcassets */,
 				3DBC839F2C93A6F800B49440 /* Preview Content */,
 			);
@@ -83,6 +124,14 @@
 			dependencies = (
 			);
 			name = "Anime GraphQL";
+			packageProductDependencies = (
+				3DBC83AC2C93A73B00B49440 /* Apollo */,
+				3DBC83B02C93A73B00B49440 /* ApolloAPI */,
+				3DBC83B22C93A73B00B49440 /* ApolloSQLite */,
+				3DBC83B42C93A73B00B49440 /* ApolloTestSupport */,
+				3DBC83B62C93A73B00B49440 /* ApolloWebSocket */,
+				3D8697FD2C93C0B0006A9680 /* AniListAPIForTesting */,
+			);
 			productName = "Anime GraphQL";
 			productReference = 3DBC83962C93A6F600B49440 /* Anime GraphQL.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,10 @@
 				Base,
 			);
 			mainGroup = 3DBC838D2C93A6F600B49440;
+			packageReferences = (
+				3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				3D8697FC2C93C0B0006A9680 /* XCLocalSwiftPackageReference "aniListAPIForTesting" */,
+			);
 			productRefGroup = 3DBC83972C93A6F600B49440 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +192,8 @@
 			files = (
 				3DBC839C2C93A6F600B49440 /* ContentView.swift in Sources */,
 				3DBC839A2C93A6F600B49440 /* Anime_GraphQLApp.swift in Sources */,
+				3D8698032C93C1B8006A9680 /* ViewModel.swift in Sources */,
+				3D8698012C93C130006A9680 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +399,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3D8697FC2C93C0B0006A9680 /* XCLocalSwiftPackageReference "aniListAPIForTesting" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = aniListAPIForTesting;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D8697FD2C93C0B0006A9680 /* AniListAPIForTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AniListAPIForTesting;
+		};
+		3DBC83AC2C93A73B00B49440 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		3DBC83B02C93A73B00B49440 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		3DBC83B22C93A73B00B49440 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		3DBC83B42C93A73B00B49440 /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+		3DBC83B62C93A73B00B49440 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DBC83AB2C93A73B00B49440 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DBC838E2C93A6F600B49440 /* Project object */;
 }

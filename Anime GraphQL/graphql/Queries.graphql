@@ -1,0 +1,29 @@
+query GetActionAnime($page: Int, $perPage: Int, $sort: [MediaSort]) {
+    Page(page: $page, perPage: $perPage) {
+        media(genre: "Action", format: TV, sort: $sort) {
+            title {
+                native
+                romaji
+                english
+            }
+            coverImage {
+                large
+            }
+            characters(role: MAIN, perPage: 3) {
+                edges {
+                    node {
+                        image {
+                            large
+                        }
+                        name {
+                            first
+                            native
+                        }
+                    }
+                    role
+                }
+            }
+        }
+    }
+}
+
