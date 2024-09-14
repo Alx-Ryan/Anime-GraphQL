@@ -16,12 +16,45 @@ This is a simple SwiftUI project that uses GraphQL and Apollo to fetch anime dat
 
 ## Screenshots
 
-![simulator_screenshot_82A0FEEA-DC40-4538-837D-8B712597B501](https://github.com/user-attachments/assets/d123e6cc-5bff-4c0c-95e7-79c0c0a2b815)
+<img src="https://github.com/user-attachments/assets/d123e6cc-5bff-4c0c-95e7-79c0c0a2b815" width="300"/>
 
-## Installation
+## Technologies Used
 
-1. Clone the repository:
+- **SwiftUI**: For the user interface.
+- **Apollo**: For making GraphQL queries.
+- **AniList GraphQL API**: The source of the anime data.
 
-   ```bash
-   git clone https://github.com/yourusername/AnimeList.git
-   cd AnimeList
+## GraphQL Query
+
+The app fetches anime data with the following GraphQL query:
+
+```graphql
+query GetActionAnime($page: Int, $perPage: Int, $sort: [MediaSort]) {
+  Page(page: $page, perPage: $perPage) {
+    media(genre: "Action", format: TV, sort: $sort) {
+      title {
+        native
+        romaji
+        english
+      }
+      coverImage {
+        large
+      }
+      characters(role: MAIN, perPage: 3) {
+        edges {
+          node {
+            image {
+              large
+            }
+            name {
+              first
+              native
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
